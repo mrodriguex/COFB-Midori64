@@ -1,0 +1,8 @@
+README.md
+**/bin/
+**/obj/
+*.log
+*.tmp
+*.bak
+*.exe
+.vscode/
