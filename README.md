@@ -258,20 +258,20 @@ The project includes test vectors in `entrada.ent`:
 │           COFB-Midori64 Encryption                  │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
-│  Input: Key (128-bit), Nonce (64-bit)              │
-│         Message (variable length)                  │
+│  Input: Key (128-bit), Nonce (64-bit)               │
+│         Message (variable length)                   │
 │                                                     │
-│  ┌─ Initialize: Y = Midori(Nonce)                 │
-│  │                                                 │
-│  └─ For each message block:                        │
-│     ├─ GY = MulGY(Y)          [G-multiplication]  │
-│     ├─ BGY = Block ⊕ GY                           │
-│     ├─ msk = Mask(beta, Block) [GF operations]    │
-│     ├─ X = (msk | BGY)                            │
-│     ├─ Y = Midori(X)          [Encrypt]           │
-│     └─ Ciphertext = Y ⊕ Block                     │
+│  ┌─ Initialize: Y = Midori(Nonce)                   │
+│  │                                                  │
+│  └─ For each message block:                         │
+│     ├─ GY = MulGY(Y)          [G-multiplication]    │
+│     ├─ BGY = Block ⊕ GY                             │
+│     ├─ msk = Mask(beta, Block) [GF operations]      │
+│     ├─ X = (msk | BGY)                              │
+│     ├─ Y = Midori(X)          [Encrypt]             │
+│     └─ Ciphertext = Y ⊕ Block                       │
 │                                                     │
-│  Output: Ciphertext, Tag = Y                       │
+│  Output: Ciphertext, Tag = Y                        │
 │                                                     │
 └─────────────────────────────────────────────────────┘
 ```
