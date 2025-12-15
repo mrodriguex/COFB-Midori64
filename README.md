@@ -548,7 +548,7 @@ For questions, issues, or suggestions:
 ---
 
 **Project**: COFB-Midori64 Cryptographic Implementation  
-**Author**: Manuel [Your Name/Organization]  
+**Author**: Manuel R. Camacho  
 **License**: GNU General Public License v3.0  
 **Last Updated**: December 12, 2025  
 **Status**: Production Ready
